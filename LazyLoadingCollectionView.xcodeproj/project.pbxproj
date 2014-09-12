@@ -1,0 +1,574 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7A5859FE19C1720B0098A0E5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A5859FD19C1720B0098A0E5 /* Foundation.framework */; };
+		7A585A0019C1720B0098A0E5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A5859FF19C1720B0098A0E5 /* CoreGraphics.framework */; };
+		7A585A0219C1720B0098A0E5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A585A0119C1720B0098A0E5 /* UIKit.framework */; };
+		7A585A0819C1720C0098A0E5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7A585A0619C1720C0098A0E5 /* InfoPlist.strings */; };
+		7A585A0A19C1720C0098A0E5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A585A0919C1720C0098A0E5 /* main.m */; };
+		7A585A0E19C1720C0098A0E5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A585A0D19C1720C0098A0E5 /* AppDelegate.m */; };
+		7A585A1019C1720C0098A0E5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A585A0F19C1720C0098A0E5 /* Images.xcassets */; };
+		7A585A1719C1720C0098A0E5 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A585A1619C1720C0098A0E5 /* XCTest.framework */; };
+		7A585A1819C1720C0098A0E5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A5859FD19C1720B0098A0E5 /* Foundation.framework */; };
+		7A585A1919C1720C0098A0E5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A585A0119C1720B0098A0E5 /* UIKit.framework */; };
+		7A585A2119C1720C0098A0E5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7A585A1F19C1720C0098A0E5 /* InfoPlist.strings */; };
+		7A585A2319C1720C0098A0E5 /* LazyLoadingCollectionViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A585A2219C1720C0098A0E5 /* LazyLoadingCollectionViewTests.m */; };
+		7A585A2E19C172660098A0E5 /* MainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A585A2D19C172660098A0E5 /* MainVC.m */; };
+		7A585A3019C172820098A0E5 /* MainVC_iphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A585A2F19C172820098A0E5 /* MainVC_iphone.xib */; };
+		7A585A3219C172AB0098A0E5 /* MainVC_ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A585A3119C172AB0098A0E5 /* MainVC_ipad.xib */; };
+		7A585A3519C174500098A0E5 /* iOS-–-Lazy-Loading-Images.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7A585A3419C174500098A0E5 /* iOS-–-Lazy-Loading-Images.jpg */; };
+		7A585A3819C1767A0098A0E5 /* LazyLoadVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A585A3719C1767A0098A0E5 /* LazyLoadVC.m */; };
+		7A585A3A19C176A30098A0E5 /* LazyLoadVC_iphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A585A3919C176A30098A0E5 /* LazyLoadVC_iphone.xib */; };
+		7A585A3C19C176B50098A0E5 /* LazyLoadVC_ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A585A3B19C176B50098A0E5 /* LazyLoadVC_ipad.xib */; };
+		7A585A5719C17A9E0098A0E5 /* ImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A585A4919C17A9E0098A0E5 /* ImageCache.m */; };
+		7A585A5819C17A9E0098A0E5 /* ImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A585A4B19C17A9E0098A0E5 /* ImageDownloader.m */; };
+		7A585A5919C17A9E0098A0E5 /* ImageRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A585A4D19C17A9E0098A0E5 /* ImageRecord.m */; };
+		7A585A5B19C17A9E0098A0E5 /* UIImage+Decode.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A585A5219C17A9E0098A0E5 /* UIImage+Decode.m */; };
+		7A585A5C19C17A9E0098A0E5 /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A585A5419C17A9E0098A0E5 /* UIImage+Resize.m */; };
+		7A585A6219C17B050098A0E5 /* UIImage+Alpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A585A5F19C17B050098A0E5 /* UIImage+Alpha.m */; };
+		7A585A6319C17B050098A0E5 /* UIImage+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A585A6119C17B050098A0E5 /* UIImage+RoundedCorner.m */; };
+		7A585A6619C1919E0098A0E5 /* LazyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A585A6519C1919E0098A0E5 /* LazyCell.m */; };
+		7A585A6819C191CC0098A0E5 /* LazyCell_iphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A585A6719C191CC0098A0E5 /* LazyCell_iphone.xib */; };
+		7A585A6A19C191DE0098A0E5 /* LazyCell_ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A585A6919C191DE0098A0E5 /* LazyCell_ipad.xib */; };
+		7A585A6C19C194830098A0E5 /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A585A6B19C194830098A0E5 /* placeholder.png */; };
+		7A585A7019C19ECA0098A0E5 /* ImageList.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7A585A6F19C19ECA0098A0E5 /* ImageList.txt */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7A585A1A19C1720C0098A0E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7A5859F219C1720B0098A0E5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7A5859F919C1720B0098A0E5;
+			remoteInfo = LazyLoadingCollectionView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7A5859FA19C1720B0098A0E5 /* LazyLoadingCollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LazyLoadingCollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A5859FD19C1720B0098A0E5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7A5859FF19C1720B0098A0E5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7A585A0119C1720B0098A0E5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7A585A0519C1720C0098A0E5 /* LazyLoadingCollectionView-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LazyLoadingCollectionView-Info.plist"; sourceTree = "<group>"; };
+		7A585A0719C1720C0098A0E5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7A585A0919C1720C0098A0E5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7A585A0B19C1720C0098A0E5 /* LazyLoadingCollectionView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LazyLoadingCollectionView-Prefix.pch"; sourceTree = "<group>"; };
+		7A585A0C19C1720C0098A0E5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7A585A0D19C1720C0098A0E5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7A585A0F19C1720C0098A0E5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		7A585A1519C1720C0098A0E5 /* LazyLoadingCollectionViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LazyLoadingCollectionViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A585A1619C1720C0098A0E5 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		7A585A1E19C1720C0098A0E5 /* LazyLoadingCollectionViewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LazyLoadingCollectionViewTests-Info.plist"; sourceTree = "<group>"; };
+		7A585A2019C1720C0098A0E5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7A585A2219C1720C0098A0E5 /* LazyLoadingCollectionViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LazyLoadingCollectionViewTests.m; sourceTree = "<group>"; };
+		7A585A2C19C172660098A0E5 /* MainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainVC.h; sourceTree = "<group>"; };
+		7A585A2D19C172660098A0E5 /* MainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainVC.m; sourceTree = "<group>"; };
+		7A585A2F19C172820098A0E5 /* MainVC_iphone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainVC_iphone.xib; sourceTree = "<group>"; };
+		7A585A3119C172AB0098A0E5 /* MainVC_ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainVC_ipad.xib; sourceTree = "<group>"; };
+		7A585A3419C174500098A0E5 /* iOS-–-Lazy-Loading-Images.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "iOS-–-Lazy-Loading-Images.jpg"; sourceTree = "<group>"; };
+		7A585A3619C1767A0098A0E5 /* LazyLoadVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LazyLoadVC.h; sourceTree = "<group>"; };
+		7A585A3719C1767A0098A0E5 /* LazyLoadVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LazyLoadVC.m; sourceTree = "<group>"; };
+		7A585A3919C176A30098A0E5 /* LazyLoadVC_iphone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LazyLoadVC_iphone.xib; sourceTree = "<group>"; };
+		7A585A3B19C176B50098A0E5 /* LazyLoadVC_ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LazyLoadVC_ipad.xib; sourceTree = "<group>"; };
+		7A585A4819C17A9E0098A0E5 /* ImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCache.h; sourceTree = "<group>"; };
+		7A585A4919C17A9E0098A0E5 /* ImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCache.m; sourceTree = "<group>"; };
+		7A585A4A19C17A9E0098A0E5 /* ImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageDownloader.h; sourceTree = "<group>"; };
+		7A585A4B19C17A9E0098A0E5 /* ImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageDownloader.m; sourceTree = "<group>"; };
+		7A585A4C19C17A9E0098A0E5 /* ImageRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageRecord.h; sourceTree = "<group>"; };
+		7A585A4D19C17A9E0098A0E5 /* ImageRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageRecord.m; sourceTree = "<group>"; };
+		7A585A5119C17A9E0098A0E5 /* UIImage+Decode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Decode.h"; sourceTree = "<group>"; };
+		7A585A5219C17A9E0098A0E5 /* UIImage+Decode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Decode.m"; sourceTree = "<group>"; };
+		7A585A5319C17A9E0098A0E5 /* UIImage+Resize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Resize.h"; sourceTree = "<group>"; };
+		7A585A5419C17A9E0098A0E5 /* UIImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Resize.m"; sourceTree = "<group>"; };
+		7A585A5E19C17B050098A0E5 /* UIImage+Alpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Alpha.h"; sourceTree = "<group>"; };
+		7A585A5F19C17B050098A0E5 /* UIImage+Alpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Alpha.m"; sourceTree = "<group>"; };
+		7A585A6019C17B050098A0E5 /* UIImage+RoundedCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RoundedCorner.h"; sourceTree = "<group>"; };
+		7A585A6119C17B050098A0E5 /* UIImage+RoundedCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RoundedCorner.m"; sourceTree = "<group>"; };
+		7A585A6419C1919E0098A0E5 /* LazyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LazyCell.h; sourceTree = "<group>"; };
+		7A585A6519C1919E0098A0E5 /* LazyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LazyCell.m; sourceTree = "<group>"; };
+		7A585A6719C191CC0098A0E5 /* LazyCell_iphone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LazyCell_iphone.xib; sourceTree = "<group>"; };
+		7A585A6919C191DE0098A0E5 /* LazyCell_ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LazyCell_ipad.xib; sourceTree = "<group>"; };
+		7A585A6B19C194830098A0E5 /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
+		7A585A6F19C19ECA0098A0E5 /* ImageList.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ImageList.txt; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7A5859F719C1720B0098A0E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A585A0019C1720B0098A0E5 /* CoreGraphics.framework in Frameworks */,
+				7A585A0219C1720B0098A0E5 /* UIKit.framework in Frameworks */,
+				7A5859FE19C1720B0098A0E5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A585A1219C1720C0098A0E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A585A1719C1720C0098A0E5 /* XCTest.framework in Frameworks */,
+				7A585A1919C1720C0098A0E5 /* UIKit.framework in Frameworks */,
+				7A585A1819C1720C0098A0E5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7A5859F119C1720B0098A0E5 = {
+			isa = PBXGroup;
+			children = (
+				7A585A0319C1720B0098A0E5 /* LazyLoadingCollectionView */,
+				7A585A1C19C1720C0098A0E5 /* LazyLoadingCollectionViewTests */,
+				7A5859FC19C1720B0098A0E5 /* Frameworks */,
+				7A5859FB19C1720B0098A0E5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7A5859FB19C1720B0098A0E5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7A5859FA19C1720B0098A0E5 /* LazyLoadingCollectionView.app */,
+				7A585A1519C1720C0098A0E5 /* LazyLoadingCollectionViewTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7A5859FC19C1720B0098A0E5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7A5859FD19C1720B0098A0E5 /* Foundation.framework */,
+				7A5859FF19C1720B0098A0E5 /* CoreGraphics.framework */,
+				7A585A0119C1720B0098A0E5 /* UIKit.framework */,
+				7A585A1619C1720C0098A0E5 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7A585A0319C1720B0098A0E5 /* LazyLoadingCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				7A585A3319C174420098A0E5 /* IMAGES */,
+				7A585A4719C17A9E0098A0E5 /* IMAGE_HELPERS */,
+				7A585A4E19C17A9E0098A0E5 /* UIIMAGE_CATEGORIES */,
+				7A585A0C19C1720C0098A0E5 /* AppDelegate.h */,
+				7A585A0D19C1720C0098A0E5 /* AppDelegate.m */,
+				7A585A2C19C172660098A0E5 /* MainVC.h */,
+				7A585A2D19C172660098A0E5 /* MainVC.m */,
+				7A585A2F19C172820098A0E5 /* MainVC_iphone.xib */,
+				7A585A3119C172AB0098A0E5 /* MainVC_ipad.xib */,
+				7A585A3619C1767A0098A0E5 /* LazyLoadVC.h */,
+				7A585A3719C1767A0098A0E5 /* LazyLoadVC.m */,
+				7A585A3919C176A30098A0E5 /* LazyLoadVC_iphone.xib */,
+				7A585A3B19C176B50098A0E5 /* LazyLoadVC_ipad.xib */,
+				7A585A6419C1919E0098A0E5 /* LazyCell.h */,
+				7A585A6519C1919E0098A0E5 /* LazyCell.m */,
+				7A585A6719C191CC0098A0E5 /* LazyCell_iphone.xib */,
+				7A585A6919C191DE0098A0E5 /* LazyCell_ipad.xib */,
+				7A585A0F19C1720C0098A0E5 /* Images.xcassets */,
+				7A585A0419C1720C0098A0E5 /* Supporting Files */,
+			);
+			path = LazyLoadingCollectionView;
+			sourceTree = "<group>";
+		};
+		7A585A0419C1720C0098A0E5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7A585A0519C1720C0098A0E5 /* LazyLoadingCollectionView-Info.plist */,
+				7A585A0619C1720C0098A0E5 /* InfoPlist.strings */,
+				7A585A0919C1720C0098A0E5 /* main.m */,
+				7A585A0B19C1720C0098A0E5 /* LazyLoadingCollectionView-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7A585A1C19C1720C0098A0E5 /* LazyLoadingCollectionViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				7A585A2219C1720C0098A0E5 /* LazyLoadingCollectionViewTests.m */,
+				7A585A1D19C1720C0098A0E5 /* Supporting Files */,
+			);
+			path = LazyLoadingCollectionViewTests;
+			sourceTree = "<group>";
+		};
+		7A585A1D19C1720C0098A0E5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7A585A1E19C1720C0098A0E5 /* LazyLoadingCollectionViewTests-Info.plist */,
+				7A585A1F19C1720C0098A0E5 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7A585A3319C174420098A0E5 /* IMAGES */ = {
+			isa = PBXGroup;
+			children = (
+				7A585A6F19C19ECA0098A0E5 /* ImageList.txt */,
+				7A585A6B19C194830098A0E5 /* placeholder.png */,
+				7A585A3419C174500098A0E5 /* iOS-–-Lazy-Loading-Images.jpg */,
+			);
+			path = IMAGES;
+			sourceTree = "<group>";
+		};
+		7A585A4719C17A9E0098A0E5 /* IMAGE_HELPERS */ = {
+			isa = PBXGroup;
+			children = (
+				7A585A4819C17A9E0098A0E5 /* ImageCache.h */,
+				7A585A4919C17A9E0098A0E5 /* ImageCache.m */,
+				7A585A4A19C17A9E0098A0E5 /* ImageDownloader.h */,
+				7A585A4B19C17A9E0098A0E5 /* ImageDownloader.m */,
+				7A585A4C19C17A9E0098A0E5 /* ImageRecord.h */,
+				7A585A4D19C17A9E0098A0E5 /* ImageRecord.m */,
+			);
+			path = IMAGE_HELPERS;
+			sourceTree = "<group>";
+		};
+		7A585A4E19C17A9E0098A0E5 /* UIIMAGE_CATEGORIES */ = {
+			isa = PBXGroup;
+			children = (
+				7A585A5E19C17B050098A0E5 /* UIImage+Alpha.h */,
+				7A585A5F19C17B050098A0E5 /* UIImage+Alpha.m */,
+				7A585A6019C17B050098A0E5 /* UIImage+RoundedCorner.h */,
+				7A585A6119C17B050098A0E5 /* UIImage+RoundedCorner.m */,
+				7A585A5119C17A9E0098A0E5 /* UIImage+Decode.h */,
+				7A585A5219C17A9E0098A0E5 /* UIImage+Decode.m */,
+				7A585A5319C17A9E0098A0E5 /* UIImage+Resize.h */,
+				7A585A5419C17A9E0098A0E5 /* UIImage+Resize.m */,
+			);
+			path = UIIMAGE_CATEGORIES;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7A5859F919C1720B0098A0E5 /* LazyLoadingCollectionView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A585A2619C1720C0098A0E5 /* Build configuration list for PBXNativeTarget "LazyLoadingCollectionView" */;
+			buildPhases = (
+				7A5859F619C1720B0098A0E5 /* Sources */,
+				7A5859F719C1720B0098A0E5 /* Frameworks */,
+				7A5859F819C1720B0098A0E5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LazyLoadingCollectionView;
+			productName = LazyLoadingCollectionView;
+			productReference = 7A5859FA19C1720B0098A0E5 /* LazyLoadingCollectionView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7A585A1419C1720C0098A0E5 /* LazyLoadingCollectionViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A585A2919C1720C0098A0E5 /* Build configuration list for PBXNativeTarget "LazyLoadingCollectionViewTests" */;
+			buildPhases = (
+				7A585A1119C1720C0098A0E5 /* Sources */,
+				7A585A1219C1720C0098A0E5 /* Frameworks */,
+				7A585A1319C1720C0098A0E5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7A585A1B19C1720C0098A0E5 /* PBXTargetDependency */,
+			);
+			name = LazyLoadingCollectionViewTests;
+			productName = LazyLoadingCollectionViewTests;
+			productReference = 7A585A1519C1720C0098A0E5 /* LazyLoadingCollectionViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7A5859F219C1720B0098A0E5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Cian;
+				TargetAttributes = {
+					7A585A1419C1720C0098A0E5 = {
+						TestTargetID = 7A5859F919C1720B0098A0E5;
+					};
+				};
+			};
+			buildConfigurationList = 7A5859F519C1720B0098A0E5 /* Build configuration list for PBXProject "LazyLoadingCollectionView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7A5859F119C1720B0098A0E5;
+			productRefGroup = 7A5859FB19C1720B0098A0E5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7A5859F919C1720B0098A0E5 /* LazyLoadingCollectionView */,
+				7A585A1419C1720C0098A0E5 /* LazyLoadingCollectionViewTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7A5859F819C1720B0098A0E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A585A3519C174500098A0E5 /* iOS-–-Lazy-Loading-Images.jpg in Resources */,
+				7A585A7019C19ECA0098A0E5 /* ImageList.txt in Resources */,
+				7A585A0819C1720C0098A0E5 /* InfoPlist.strings in Resources */,
+				7A585A6C19C194830098A0E5 /* placeholder.png in Resources */,
+				7A585A3C19C176B50098A0E5 /* LazyLoadVC_ipad.xib in Resources */,
+				7A585A3019C172820098A0E5 /* MainVC_iphone.xib in Resources */,
+				7A585A1019C1720C0098A0E5 /* Images.xcassets in Resources */,
+				7A585A3219C172AB0098A0E5 /* MainVC_ipad.xib in Resources */,
+				7A585A6819C191CC0098A0E5 /* LazyCell_iphone.xib in Resources */,
+				7A585A6A19C191DE0098A0E5 /* LazyCell_ipad.xib in Resources */,
+				7A585A3A19C176A30098A0E5 /* LazyLoadVC_iphone.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A585A1319C1720C0098A0E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A585A2119C1720C0098A0E5 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7A5859F619C1720B0098A0E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A585A5819C17A9E0098A0E5 /* ImageDownloader.m in Sources */,
+				7A585A3819C1767A0098A0E5 /* LazyLoadVC.m in Sources */,
+				7A585A2E19C172660098A0E5 /* MainVC.m in Sources */,
+				7A585A5719C17A9E0098A0E5 /* ImageCache.m in Sources */,
+				7A585A5B19C17A9E0098A0E5 /* UIImage+Decode.m in Sources */,
+				7A585A6319C17B050098A0E5 /* UIImage+RoundedCorner.m in Sources */,
+				7A585A0E19C1720C0098A0E5 /* AppDelegate.m in Sources */,
+				7A585A0A19C1720C0098A0E5 /* main.m in Sources */,
+				7A585A5919C17A9E0098A0E5 /* ImageRecord.m in Sources */,
+				7A585A6619C1919E0098A0E5 /* LazyCell.m in Sources */,
+				7A585A6219C17B050098A0E5 /* UIImage+Alpha.m in Sources */,
+				7A585A5C19C17A9E0098A0E5 /* UIImage+Resize.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A585A1119C1720C0098A0E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A585A2319C1720C0098A0E5 /* LazyLoadingCollectionViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7A585A1B19C1720C0098A0E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7A5859F919C1720B0098A0E5 /* LazyLoadingCollectionView */;
+			targetProxy = 7A585A1A19C1720C0098A0E5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7A585A0619C1720C0098A0E5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7A585A0719C1720C0098A0E5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7A585A1F19C1720C0098A0E5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7A585A2019C1720C0098A0E5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7A585A2419C1720C0098A0E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7A585A2519C1720C0098A0E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7A585A2719C1720C0098A0E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LazyLoadingCollectionView/LazyLoadingCollectionView-Prefix.pch";
+				INFOPLIST_FILE = "LazyLoadingCollectionView/LazyLoadingCollectionView-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7A585A2819C1720C0098A0E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LazyLoadingCollectionView/LazyLoadingCollectionView-Prefix.pch";
+				INFOPLIST_FILE = "LazyLoadingCollectionView/LazyLoadingCollectionView-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		7A585A2A19C1720C0098A0E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LazyLoadingCollectionView.app/LazyLoadingCollectionView";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LazyLoadingCollectionView/LazyLoadingCollectionView-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "LazyLoadingCollectionViewTests/LazyLoadingCollectionViewTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		7A585A2B19C1720C0098A0E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LazyLoadingCollectionView.app/LazyLoadingCollectionView";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LazyLoadingCollectionView/LazyLoadingCollectionView-Prefix.pch";
+				INFOPLIST_FILE = "LazyLoadingCollectionViewTests/LazyLoadingCollectionViewTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7A5859F519C1720B0098A0E5 /* Build configuration list for PBXProject "LazyLoadingCollectionView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A585A2419C1720C0098A0E5 /* Debug */,
+				7A585A2519C1720C0098A0E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A585A2619C1720C0098A0E5 /* Build configuration list for PBXNativeTarget "LazyLoadingCollectionView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A585A2719C1720C0098A0E5 /* Debug */,
+				7A585A2819C1720C0098A0E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7A585A2919C1720C0098A0E5 /* Build configuration list for PBXNativeTarget "LazyLoadingCollectionViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A585A2A19C1720C0098A0E5 /* Debug */,
+				7A585A2B19C1720C0098A0E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7A5859F219C1720B0098A0E5 /* Project object */;
+}
